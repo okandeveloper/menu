@@ -30,7 +30,7 @@ nav a{
 }
 nav .animation{
     position: absolute;
-    height: 5px;
+    height: 2px;
     bottom: 0;
     z-index: 0;
     background: #1abc9c;
@@ -81,4 +81,86 @@ a:nth-child(5){
 nav .start-recommend,a:nth-child(5):hover~.animation{
     width: 120px;
     left: 470px;
+}
+
+@media (max-width:1050px){
+    nav{
+        position: relative;
+        margin: 270px auto 0;
+        width: 350px;
+        height: 50px;
+        background: #34495e;
+        border-radius: 8px;
+        font-size: 0;
+        box-shadow: 0 2px 3px 0 rgb(0, 0, 0,.1);
+        
+    }
+    
+    nav a{
+        font-size: 15px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        text-align: center;
+        
+    }
+    nav .animation{
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        z-index: 0;
+        background: #1abc9c;
+        width: 100px;
+        border-radius: 8px;
+        transition: all .5s ease 0s;
+    }
+    a:nth-child(1){
+        width: 50px;
+    }
+    
+    nav .start-home,a:nth-child(1):hover~.animation{
+        width: 50px;
+        left: 0;
+    }
+    
+    a:nth-child(2){
+        width: 65px;
+    }
+    
+    nav .start-topıcs,a:nth-child(2):hover~.animation{
+        width: 65px;
+        left: 50px;
+    }
+    
+    a:nth-child(3){
+        width: 75px;
+    }
+    
+    nav .start-rewards,a:nth-child(3):hover~.animation{
+        width: 75px;
+        left: 115px;
+    }
+    
+    a:nth-child(4){
+        width: 55px;
+    }
+    
+    nav .start-earn,a:nth-child(4):hover~.animation{
+        width: 55px;
+        left: 190px;
+    }
+    
+    a:nth-child(5){
+        width: 10px;
+    }
+    
+    nav .start-recommend,a:nth-child(5):hover~.animation{
+        width: 100px;
+        left: 245px;
+    }
+    
 }
